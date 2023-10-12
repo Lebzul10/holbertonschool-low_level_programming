@@ -1,1 +1,1 @@
-Some txet in it.
+Some text in it.
