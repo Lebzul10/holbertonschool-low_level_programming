@@ -23,12 +23,11 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(n);
-						if (i != '9' || j != '8')
-						{
-							putchar(',');
-							putchar(' ');
-						}
-						
+					if (i != '9' || j != '8')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				}
 			}
