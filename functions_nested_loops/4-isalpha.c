@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - Entry point
+ * @c: Some description
  *
  * Return: Always 0 (Success)
  */
