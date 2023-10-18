@@ -1,7 +1,0 @@
-#include <stdio.h>
-int main()
-{
-int a;
-a = -36 % 10;
- putchar('0' + a);
-}
