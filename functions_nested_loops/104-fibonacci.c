@@ -23,11 +23,11 @@ int main(void)
 			b = h2, f2 = h3;
 			if (i != 97)
 			{
-				printf("%lu%lu, ", f2, b);
+				printf("%lu%010lu, ", f2, b);
 			}
 			else
 			{
-				printf("%lu%lu", f2, b);
+				printf("%lu%010lu", f2, b);
 			}
 		}
 		else
@@ -38,6 +38,6 @@ int main(void)
 		}
 		i++;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
