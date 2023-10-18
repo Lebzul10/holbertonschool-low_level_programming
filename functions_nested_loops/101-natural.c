@@ -4,7 +4,7 @@
  *
  * Return: Something much more usefull
  */
-int main(void)
+void computeh()
 {
   int i = 0;
   int s = 0;
