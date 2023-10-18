@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * print_times_table - Something useful
- * @n: Something more useful
+ * times_hesen - Yes for it!
+ * @i: Iterator
+ * @j: J iterator
  *
  * Return: Something much more useful
  */
@@ -38,6 +39,12 @@ void times_hesen(int i, int j)
 		_putchar(x + '0');
 	}
 }
+/**
+ * print_times_table - Something useful
+ * @n: Something more useful
+ *
+ * Return: Something much more useful
+ */
 void print_times_table(int n)
 {
 	int i, j;
