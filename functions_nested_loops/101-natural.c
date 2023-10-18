@@ -4,18 +4,19 @@
  *
  * Return: Something much more usefull
  */
-void computeh()
+int main(void)
 {
-  int i = 0;
-  int s = 0;
-  
-  while (i < 1024)
+	int i = 0;
+	int s = 0;
+
+	while (i < 1024)
 	{
-	  if (i % 3 == 0 || i % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-		  s = s + i;
+			s = s + i;
 		}
-	  i++;
+		i++;
 	}
-  printf("%d\n", s);
+	printf("%d\n", s);
+	return (0);
 }
