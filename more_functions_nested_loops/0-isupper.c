@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * _isupper - Something usefull
- * @n: Something more usefull
+ * @c: Something more usefull
  *
  * Return: Something much more usefull
  */
 int _isupper(int c)
 {
-	if(c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
