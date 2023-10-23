@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reset_to_98 - Something useful
+ * swap_int - Something useful
  * @a: Something more useful
  * @b: Something more useful
  *
