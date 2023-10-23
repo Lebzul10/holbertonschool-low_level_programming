@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * reset_to_98 - Something useful
- * @n: Something more useful
+ * @a: Something more useful
+ * @b: Something more useful
  *
  * Return - Something much more useful
  */
