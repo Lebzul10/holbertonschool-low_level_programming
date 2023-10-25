@@ -5,7 +5,7 @@
  * @src: Something more useful
  * @dest: Something more useful
  *
- * Return - Something much more useful
+ * Return: Something much more useful
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -15,7 +15,7 @@ char *_strcpy(char *dest, char *src)
 	b = a;
 	while (a >= 0)
 	{
-		*dest=*src;
+		*dest = *src;
 		src++;
 		dest++;
 		a--;
@@ -25,5 +25,5 @@ char *_strcpy(char *dest, char *src)
 		dest--;
 		b--;
 	}
-	return(dest);
+	return (dest);
 }
