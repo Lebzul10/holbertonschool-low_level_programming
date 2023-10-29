@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strchr - Something usefull
  * @s: Something more usefull
@@ -16,15 +15,15 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 	if (c != '\0')
-	  {
-	while (*(s + a + i) != '\0')
 	{
-		return (s + a + i);
+		while (*(s + a + i) != '\0')
+		{
+			return (s + a + i);
+		}
 	}
-	  }
 	else if (c == '\0')
-	  {
+	{
 		return ("");
-	  }
-	return (NULL);
+	}
+	return (0);
 }
