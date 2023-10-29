@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - Something usefull
  * @s: Something more usefull
@@ -23,7 +24,7 @@ char *_strchr(char *s, char c)
 	}
 	else
 	{
-		return (0);
+		return (NULL);
 	}
 	return (0);
 }
