@@ -22,9 +22,5 @@ char *_strchr(char *s, char c)
 			return (s + a + i);
 		}
 	}
-	else
-	{
-		return (NULL);
-	}
-	return (0);
+	return (NULL);
 }
