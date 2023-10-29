@@ -1,4 +1,4 @@
-#inclue "main.h"
+#include <stdio.h>
 /**
  * print_chessboard - Something usefull
  * @a: Something more usefull
