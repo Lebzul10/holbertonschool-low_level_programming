@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_diagram - Something usefull
+ * print_diagsums - Something usefull
  * @a: Something more usefull
  * @size: Something more usefull
  *
