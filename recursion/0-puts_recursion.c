@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _print_recursion - Something useful
+ * _puts_recursion - Something useful
  * @s: Something more useful
  *
  * Return: Something much more useful
  */
-void _print_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	int i = 0;
 
