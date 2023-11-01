@@ -12,9 +12,9 @@ int _sqrt(int a, int b)
 	{
 		return (_sqrt(a + 1, b));
 	}
-	else if(a * a > b)
+	else if (a * a > b)
 	{
-		return (-1);	
+		return (-1);
 	}
 	else
 	{
