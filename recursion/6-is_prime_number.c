@@ -15,7 +15,7 @@ int _prime(int a, int b)
 	else if ((a % b == 0 && b < a) || a <= 1)
 	{
 		return (0);
- 	}
+	}
 	return (1);
 }
 /**
