@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 	int coin[] = {25, 10, 5, 2, 1};
 	int a, i = 0, c = 0;
 
-	a = atoi(argv[1]);
 	if (argc == 1)
 	{
 		printf("Error\n");
