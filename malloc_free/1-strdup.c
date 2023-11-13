@@ -1,30 +1,32 @@
 #include <stdlib.h>
+#include <string.h>
 /**
- * reset_to_98 - Something useful
- * @n: Something more useful
+ * _strdup - Something useful
+ * @str: Something more useful
  *
  * Return: Something much more useful
  */
 char *_strdup(char *str)
 {
-  int i = 0, len;
-  char *a;
+	int i = 0, len;
+	char *a;
 
-  if (str == NULL)
+	if (str == NULL)
 	{
-	  return (NULL);
+		return (NULL);
 	}
-  len = strlen(str);
-  arr = malloc(len * sizeof(char));
-  if (a == NULL)
+	len = strlen(str);
+	a = malloc(len * sizeof(char) + 1);
+	if (a == NULL)
 	{
-	  return NULL;
+		return (NULL);
 	}
-  while (len > 0)
+	while (len > 0)
 	{
-	  a[i] = str[i];
-	  i++;
-	  len--;
+		a[i] = str[i];
+		i++;
+		len--;
 	}
-  return (a);
+	a[i] = '\0';
+	return (a);
 }
