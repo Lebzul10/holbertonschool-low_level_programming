@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 	a = malloc(sizeof(char) * l + 1);
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; j < strlen(av[i]); j++)
+		for (j = 0; j < (int)strlen(av[i]); j++)
 		{
 			a[b] = av[i][j];
 			b++;
