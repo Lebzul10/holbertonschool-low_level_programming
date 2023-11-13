@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		s1[0] = '\0';
+		i = strlen(s1);
 	}
 	else
 	{
@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 == NULL)
 	{
-		s2[0] = '\0';
+		j = strlen(s2);
 	}
 	else
 	{
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (s1[i] != '\0' || s2[j] != '\0')
+	while (i < len1 || j < len2)
 	{
 		if (i < len1)
 		{
