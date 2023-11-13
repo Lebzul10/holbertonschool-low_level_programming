@@ -8,17 +8,17 @@
  */
 char *create_array(unsigned int size, char c)
 {
-    char *arr;
+	char *arr;
 
-    arr = malloc(size * sizeof(char));
-    if (size == 0)
-    {
-        return (NULL);
-    }
-    while (size != 0)
-    {
-        arr[size] = c;
-        size--;
-    }
-    return (arr);
+	arr = malloc(size * sizeof(char));
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	while (size >= 0)
+	{
+		arr[size] = c;
+		size--;
+	}
+	return (arr);
 }
