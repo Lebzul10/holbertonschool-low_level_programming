@@ -9,13 +9,19 @@ char **strtow(char *str)
 {
     char **s;
     int i = 0, j = 0, len_s = 0, row_count = 0, zeros = 0, a = 0, zeros_old = 0;
+
     while (str[a] != '\0')
     {
         if ((str[a] != 32 && str[a + 1] == 32) || (str[a] != 32 && str[a + 1] == '\0'))
             row_count++;
         a++;
     }
-    s = malloc(row_count * sizeof(char *));
+	if (row_count == 0)
+	  {
+		return (NULL);
+	  }
+    s = malloc((row_count + 1) * sizeof(char *));
+	s[row_count] = NULL;
     for (i = 0; i < row_count; i++)
     {
         while (str[zeros + zeros_old] == 32)
