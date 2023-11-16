@@ -12,7 +12,7 @@ char **strtow(char *str)
 
     while (str[a] != '\0')
     {
-        if ((str[a] != 32 && str[a + 1] == 32) || (str[a] != 32 && str[a + 1] == '\0'))
+	  if (str[a] != 32 && (str[a + 1] == 32 || str[a + 1] == '\0'))
             row_count++;
         a++;
     }
