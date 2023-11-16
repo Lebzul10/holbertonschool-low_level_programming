@@ -21,16 +21,17 @@ char **strtow(char *str)
 		return (NULL);
 	  }
     s = malloc((row_count + 1) * sizeof(char *));
-	s[row_count] = NULL;
     for (i = 0; i < row_count; i++)
     {
         while (str[zeros + zeros_old] == 32)
+		  {
             zeros++;
+		  }
         while (str[len_s + zeros + zeros_old] != 32)
         {
             len_s++;
         }
-        s[i] = malloc(sizeof(char) * len_s + 1);
+        s[i] = malloc(sizeof(char) * len_s);
         while (j < len_s)
         {
             s[i][j] = str[j + zeros + zeros_old];
@@ -42,5 +43,6 @@ char **strtow(char *str)
         zeros = 0;
         j = 0;
     }
+	s[row_count] = NULL;
     return s;
 }
