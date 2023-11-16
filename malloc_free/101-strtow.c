@@ -27,11 +27,11 @@ char **strtow(char *str)
 		  {
             zeros++;
 		  }
-        while (str[len_s + zeros + zeros_old] != 32)
+        while (str[len_s + zeros + zeros_old] != 32 && str[len_s + zeros + zeros_old] != '\0')
         {
             len_s++;
         }
-        s[i] = malloc(sizeof(char) * len_s);
+        s[i] = malloc(sizeof(char) * len_s + 1);
         while (j < len_s)
         {
             s[i][j] = str[j + zeros + zeros_old];
