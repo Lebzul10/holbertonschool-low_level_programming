@@ -1,5 +1,5 @@
 #include <stdio.h>
-0;10;1c/**
+/**
  * main - Something useful
  *
  * Return: Something much more useful
