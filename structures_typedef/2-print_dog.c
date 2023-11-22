@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * reset_to_98 - Something useful
  * @d: Something more useful
