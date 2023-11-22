@@ -1,8 +1,11 @@
 #include <dog.h>
 #include <stdlib.h>
 /**
- * reset_to_98 - Something useful
- * @n: Something more useful
+ * init_dog - Something useful
+ * @d: Something more useful
+ * @name: Something more useful
+ * @age: Something more useful
+ * @owner: Something more useful
  *
  * Return: Something much more useful
  */
