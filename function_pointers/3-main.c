@@ -11,9 +11,10 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int a, b, d;
 	char *c = argv[2];
 
+	d = strlen(c);
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	if ((*c != '+' && *c != '-' && *c != '*' && *c != '/' && *c != '%') || strlen(c) != 1)
+	if ((*c != '+' && *c != '-' && *c != '*' && *c != '/' && *c != '%') || d != 1)
 	{
 		printf("Error\n");
 		exit(99);
