@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "3-calc.h"
 /**
@@ -13,14 +14,14 @@ int main(int argc, char *argv[])
 	int a, b;
 	char *c = argv[2];
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (*c != '+' && *c != '-' && *c != '*' && *c != '/' && *c != '%')
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	if ((*c != '+' && *c != '-' && *c != '*' && *c != '/' && *c != '%') || strlen(c) != 1)
 	{
 		printf("Error\n");
 		exit(99);
