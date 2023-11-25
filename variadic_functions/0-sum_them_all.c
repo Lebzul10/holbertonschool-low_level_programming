@@ -16,10 +16,11 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		return (0);
 	}
+	va_start(zor, n);
 	for (i = 0; i < n; i++)
 	{
 		a = a + va_arg(zor, int);
 	}
 	va_end(zor);
-	return (sum);
+	return (a);
 }
