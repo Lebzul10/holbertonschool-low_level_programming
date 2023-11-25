@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- * print_sign - Something usefull
+ * sum_them_all - Something usefull
  * @n: Something more usefull
  *
  * Return: Something much more usefull
