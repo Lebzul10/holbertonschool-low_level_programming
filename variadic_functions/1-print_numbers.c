@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * print_numbers - Something usefull
  * @n: Something more usefull
