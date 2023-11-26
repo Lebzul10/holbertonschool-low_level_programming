@@ -1,7 +1,7 @@
-section.text
-	global _start
+section.text:
+	global main
 
-_start:
+main:
 	mov edx,length
 	mov ecx,text
 	mov ebx,1
@@ -11,6 +11,6 @@ _start:
 	mov eax,1
 	int 0x80
 
-section.data
+section.data:
 	text db "Hello, World", 0xa
 	length equ $ - text
