@@ -6,10 +6,10 @@ _start:
 	mov ecx,text
 	mov ebx,1
 	mov eax,4
-	syscall
+	int 0x80
 
 	mov eax,1
-	syscall
+	int 0x80
 
 section.data
 	text db "Hello, World", 0xa
