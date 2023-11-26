@@ -13,5 +13,5 @@ main:
 	int 0x80
 
 section.data:
-	text db "Hello, World", 10
+	text db "Hello, World", 0xa
 	length equ $ - text
