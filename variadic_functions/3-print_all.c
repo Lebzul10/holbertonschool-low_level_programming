@@ -42,14 +42,12 @@ void pstring(va_list zor)
 {
 	char *s = va_arg(zor, char *);
 
-	if (s != NULL)
+	while (s != NULL)
 	{
 		printf("%s", s);
+		return;
 	}
-	else if (s == NULL)
-	{
-		printf("(nil)");
-	}
+	printf("(nil)");
 }
 /**
  * print_all - Something usefull
