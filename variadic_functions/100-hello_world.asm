@@ -13,4 +13,4 @@ _start:
 
 section.data
 	text db "Hello, World", 0xa
-	len equ $ - text
+	length equ $ - text
