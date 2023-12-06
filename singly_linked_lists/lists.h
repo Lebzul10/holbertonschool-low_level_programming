@@ -2,9 +2,16 @@
 #define LIST_h
 
 #include <stddef.h>
-struct hoqqa
+/**
+ * hoqqa - Something usefull
+ * @str: Something more usefull
+ * @n: Something more usefull
+ * @next: Something more usefull
+ *
+ */
+typedef struct hoqqa
 {
-	char *str
+	char *str;
 	unsigned long int n;
 	struct hoqqa *next;
 } list_t;
