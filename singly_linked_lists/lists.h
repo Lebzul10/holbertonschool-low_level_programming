@@ -3,9 +3,9 @@
 
 #include <stddef.h>
 /**
- * hoqqa - Something usefull
+ * struct hoqqa - Something usefull
  * @str: Something more usefull
- * @n: Something more usefull
+ * @len: Something more usefull
  * @next: Something more usefull
  *
  */
