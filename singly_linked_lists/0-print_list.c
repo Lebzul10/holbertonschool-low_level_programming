@@ -11,9 +11,9 @@ size_t print_list(const list_t *h)
 {
 	unsigned long int a;
 
-	while (a != NULL)
+	while (h != NULL)
 	{
-		if (str == NULL)
+		if (h->str == NULL)
 		{
 			prntf("[0] (nil)");
 		}
