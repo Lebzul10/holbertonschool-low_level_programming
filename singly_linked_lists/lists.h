@@ -12,7 +12,7 @@
 typedef struct hoqqa
 {
 	char *str;
-	unsigned int n;
+	unsigned int len;
 	struct hoqqa *next;
 } list_t;
 
