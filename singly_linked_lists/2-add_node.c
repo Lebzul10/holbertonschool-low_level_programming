@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "lists.h"
+#include <string.h>
 /**
  * add_node - Something useful
  * @head: Something more useful
