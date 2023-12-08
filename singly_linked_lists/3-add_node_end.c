@@ -11,7 +11,6 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *axir, *zor;
-	unsigned int i = 0;
 
 	axir = malloc(sizeof(list_t));
 	if (axir == NULL)
