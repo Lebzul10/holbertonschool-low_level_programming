@@ -24,7 +24,15 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		zor = zor->next;
 	}
-	zor->next = axir;
-	axir->next = NULL;
+	if (*head == NULL)
+	{
+		axir->next = *head;
+		*head = axir;
+	}
+	else
+	{
+		zor->next = axir;
+		axir->next = NULL;
+	}
 	return (axir);
 }
