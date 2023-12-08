@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+#include "lists.h"
 /**
  * free_list - Something useful
  * @head: Something more useful
