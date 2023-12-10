@@ -3,17 +3,18 @@
 
 #include <stddef.h>
 /**
- * struct hoqqa - Something usefull
- * @str: Something more usefull
- * @len: Something more usefull
- * @next: Something more usefull
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
+ * Description: singly linked list node structure
  */
-typedef struct hoqqa
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	struct hoqqa *next;
+	struct list_s *next;
 } list_t;
 
 size_t list_len(const list_t *h);
