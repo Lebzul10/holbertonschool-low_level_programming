@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 /**
  * print_dlistint - Something usefull
@@ -8,12 +9,13 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	unsigned int n = 0;
+	unsigned int a = 0;
 
 	while (h != NULL)
 	{
 		h = h->next;
-		n++;
+		printf("%d\n", h->n);
+		a++;
 	}
-	return (n);
+	return (a);
 }
