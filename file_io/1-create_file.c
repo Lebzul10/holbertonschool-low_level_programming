@@ -21,8 +21,8 @@ int create_file(const char *filename, char *text_content)
 	}
 	fd = open(filename, O_RDONLY | O_WRONLY | O_TRUNC, 0600);
 	zor = strlen(text_content);
-	n = write(fd, text_content, zor);
-	if (n == -1 || filename == NULL)
+	zro = write(fd, text_content, zor);
+	if (zro == -1 || filename == NULL)
 	{
 		return (-1);
 	}
