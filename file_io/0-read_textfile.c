@@ -14,14 +14,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, zor, zro;
 	char *str = malloc(letters);
-	
+
 	if (filename == NULL || str == NULL)
 	{
 		return (0);
 	}
 	fd = open(filename, O_RDONLY);
 	zor = read(fd, str, letters);
-	zro = write(1, str, zor);
+	zro = write(STDOUT_FILENO, str, zor);
 	close(fd);
+	if (zro == -1)
+	{
+		return (0);
+	}
 	return (zro);
 }
