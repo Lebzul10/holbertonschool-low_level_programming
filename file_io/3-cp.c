@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		zor = read(fd1, &str[size], 1024);
 		size += zor;
 	}
-	if (zor == -1)
+	if (zor == -1 || fd1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
