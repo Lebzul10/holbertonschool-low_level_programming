@@ -13,15 +13,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd1, fd2, zor, zro, c1, c2;
-	char str[1024];
+	int fd1, fd2, zor = 31, zro, c1, c2, size = 0;
+	char str[3072];
 
 	if (argc != 3)
 	{
 		exit(97);
 	}
 	fd1 = open(argv[1], O_RDONLY);
-	zor = read(fd1, str, 1024);
+	while (zor != 0)
+	{
+		zor = read(fd1, &str[size], 1024);
+		size += zor;
+	}
 	c1 = close(fd1);
 	if (zor == -1)
 	{
@@ -29,7 +33,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fd2 = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
-	zro = write(fd2, str, zor);
+	zro = write(fd2, str, size);
 	c2 = close(fd2);
 	if (zro == -1)
 	{
@@ -46,5 +50,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
+	printf("%d\n%s\n", size, str);
 	return (0);
 }
