@@ -5,24 +5,25 @@
 #include <string.h>
 #include "main.h"
 /**
- * read_textfile - Something useful
+ * append_text_to_file - Something useful
  * @filename: Something more useful
  * @text_content: Something more useful
  *
  * Return: Something much more useful
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, zor, zro;
+	int fd, zor,zro;
 
 	if (text_content == NULL)
 	{
 		text_content = "";
 	}
-	fd = open(filename, O_RDONLY | O_WRONLY | O_TRUNC, 0600);
+	fd = open(filename, O_WRONLY | O_APPEND);
 	zor = strlen(text_content);
-	n = write(fd, text_content, zor);
-	if (n == -1 || filename == NULL)
+	zro = write(fd, text_content, zor);
+	close(fd);
+	if (zro == -1 || filename == NULL)
 	{
 		return (-1);
 	}
