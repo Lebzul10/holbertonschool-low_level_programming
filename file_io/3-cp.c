@@ -27,13 +27,13 @@ int main(int argc, char *argv[])
 		zor = read(fd1, &str[size], 1024);
 		size += zor;
 	}
-	if (zor == -1 || fd1 == -1)
+	c1 = close(fd1);
+	if (zor == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	c1 = close(fd1);
-	fd2 = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
+	fd2 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	zro = write(fd2, str, size);
 	c2 = close(fd2);
 	if (zro == -1)
