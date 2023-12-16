@@ -28,14 +28,14 @@ int main(int argc, char *argv[])
 		size += zor;
 	}
 	c1 = close(fd1);
+	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	zro = write(fd2, str, size);
+	c2 = close(fd2);
 	if (zor == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	zro = write(fd2, str, size);
-	c2 = close(fd2);
 	if (zro == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
