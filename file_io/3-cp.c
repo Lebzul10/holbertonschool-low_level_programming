@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	fd1 = open(argv[1], O_RDONLY);
-	while (zor != 0)
+	while (zor > 0)
 	{
 		zor = read(fd1, &str[size], 1024);
 		size += zor;
