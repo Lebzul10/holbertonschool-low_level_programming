@@ -26,11 +26,11 @@ int main(int argc, char *argv[])
 	{
 		zor = read(fd1, &str[size], 1024);
 		size += zor;
-		if (zor == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
+	}
+	if (zor == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
 	c1 = close(fd1);
 	fd2 = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
