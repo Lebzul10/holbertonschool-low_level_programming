@@ -34,11 +34,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	  }
 	else
 	  {
+		zro = ht->array[index];
 		while (ht->array[index] != NULL)
 		  {
 			if (strcmp(ht->array[index]->key, key) == 0)
 			  {
-				zro = ht->array[index];
 				ht->array[index]->value = strdup(value);
 				break;
 			  }
