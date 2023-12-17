@@ -10,7 +10,7 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	int i = 0, size, zor;
+	int i = 0, size, zor = 0;
 
 	if (ht == NULL)
 	{
