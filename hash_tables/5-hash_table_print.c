@@ -10,12 +10,13 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i = 0, size = ht->size;
+	unsigned long int i = 0, size;
 
 	if (ht == NULL)
 	  {
 		return;
 	  }
+	size = ht->size;
 	printf("{");
 	while (size != 0)
 	{
