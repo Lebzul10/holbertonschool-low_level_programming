@@ -11,7 +11,7 @@
 void hash_table_delete(hash_table_t *ht)
 {
 	int i = 0;
-	hasn_node_t *zor;
+	hash_node_t *zor;
 
 	while (i < ht->size)
 	{
