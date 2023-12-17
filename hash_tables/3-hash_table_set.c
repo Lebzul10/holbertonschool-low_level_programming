@@ -39,11 +39,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (strcmp(ht->array[index]->key, key) == 0)
 			  {
 				ht->array[index]->value = strdup(value);
-				return (1);
+				break;
 			  }
 			ht->array[index] = ht->array[index]->next;
 		  }
-		zor->next = NULL;
+		zor->next = array[index];
 		ht->array[index] = zor;
 	  }
 	return (1);
