@@ -11,17 +11,18 @@
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int i = 0;
-	hash_node_t *zor;
+	hash_node_t *zor, *zro;
 
 	while (i < ht->size)
 	{
-		while (ht->array[i] != NULL)
+		zro = ht->array[i];
+		while (zro != NULL)
 		{
-			zor = ht->array[i]->next;
-			free(ht->array[i]->key);
-			free(ht->array[i]->value);
-			free(ht->array[i]);
-			ht->array[i] = zor;
+			zor = zro->next;
+			free(zro->key);
+			free(zro->value);
+			free(zro);
+			zro = zor;
 		}
 		i++;
 	}
