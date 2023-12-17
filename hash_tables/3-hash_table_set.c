@@ -20,15 +20,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	index = key_index((unsigned char *)key, ht->size);
-	while (ht->array[i] != NULL)
+	while (ht->array[index] != NULL)
 	{
-		if (strcmp(ht->array[i]->key, key) == 0)
+		if (strcmp(ht->array[index]->key, key) == 0)
 		{
-			free(ht->array[i]->value);
-			ht->array[i]->value = strdup(value);
+			free(ht->array[index]->value);
+			ht->array[index]->value = strdup(value);
 			return (1);
 		}
-		ht->array[i] = ht->array[i]->next;
+		ht->array[index] = ht->array[index]->next;
 	}
 	zor = malloc(sizeof(hash_node_t));
 	if (zor == NULL)
