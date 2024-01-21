@@ -1,1 +1,1 @@
-Some useful text in it. 
+Some useful text in it.
